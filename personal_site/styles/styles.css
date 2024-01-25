@@ -1,0 +1,23 @@
+body{
+  background-color: bisque;
+}
+
+/* This is targeting a class in html */
+
+.nav_link{
+  padding: 10px;
+  color: black;
+  font-size: 1.3em;
+}
+  
+img{
+  width: 700px;
+}
+
+#main_title {
+  font-size: 4em;
+}
+
+#sub_title {
+  color: red;
+}
