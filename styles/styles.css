@@ -1,55 +1,76 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 body {
-  background-color: bisque;
-  padding: 0;
-  margin: 0;
-}
-#content {
-  max-width: 1600px;
-  margin: 0 auto;
-}
-
-/* This is targeting a class in html */
-
-nav {
-  display: flex;
-  justify-content: center;
-  background-color: black;
-}
-.nav_link {
-  padding: 10px;
-  color: bisque;
-  font-size: 1.3em;
-  text-decoration: none;  /* this removes the underline on my links at the top */
-}
-
-img {
-  width: 60%;
-  display: block;
-  margin: 0 auto;
-}
-a {
-  color: black;
-}
-nav a:hover {
-  color: black;
-  background-color: bisque;
-}
-#main_title {
-  font-size: 4em;
-  text-align: center;
-}
-p, h3{
-  text-align: center;
-}
-#sub_title {
-  color: red;
-}
-footer {
-  background-color:black;
-  color: bisque;
-  padding: 20px;
-}
-footer a {
-  color: bisque;
-}
+    background-color: bisque;
+    padding: 0;
+    margin: 0;
+  }
+  #content {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  
+  /* This is targeting a class in html */
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-family: Kalam;
+  }
+  .nav_link {
+    padding: 10px;
+    color: bisque;
+    font-size: 1.3em;
+    text-decoration: none;  /* this removes the underline on my links at the top */
+  }
+  
+  img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    border: 5px solid black;
+    margin-bottom: 20px;
+  }
+  a {
+    color: black;
+  }
+  nav a:hover {
+    color: black;
+    background-color: bisque;
+  }
+  #main_title {
+    font-size: 4em;
+    text-align: center;
+    font-family: Kalam, sans-serif;
+  }
+  h2 {
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+  }
+  p {
+    width: 80%;
+  }
+  p, h3{
+    text-align: center;
+    margin: auto;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    padding: 50px;
+    border: 5px solid black;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  #sub_title {
+    color: red;
+  }
+  footer {
+    background-color:black;
+    color: bisque;
+    padding: 10px;
+  }
+  footer a {
+    color: bisque;
+  }

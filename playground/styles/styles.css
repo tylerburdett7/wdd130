@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 body {
     background-color: bisque;
     padding: 0;
@@ -15,6 +16,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: black;
+    font-family: Kalam;
   }
   .nav_link {
     padding: 10px;
@@ -27,6 +29,8 @@ body {
     width: 60%;
     display: block;
     margin: 0 auto;
+    border: 5px solid black;
+    margin-bottom: 20px;
   }
   a {
     color: black;
@@ -38,9 +42,26 @@ body {
   #main_title {
     font-size: 4em;
     text-align: center;
+    font-family: Kalam, sans-serif;
+  }
+  h2 {
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+  }
+  p {
+    width: 80%;
   }
   p, h3{
     text-align: center;
+    margin: auto;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    padding: 50px;
+    border: 5px solid black;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    box-sizing: border-box;
   }
   #sub_title {
     color: red;
@@ -48,7 +69,7 @@ body {
   footer {
     background-color:black;
     color: bisque;
-    padding: 20px;
+    padding: 10px;
   }
   footer a {
     color: bisque;
