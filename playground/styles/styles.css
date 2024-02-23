@@ -31,6 +31,12 @@ body {
     margin: 0 auto;
     border: 5px solid black;
     margin-bottom: 20px;
+    box-shadow: 15px 15px 20px black;
+    transition: transform .7s;
+  }
+  img:hover {
+    opacity: .9;
+    transform: scale(1.1);
   }
   a {
     color: black;
@@ -43,6 +49,7 @@ body {
     font-size: 4em;
     text-align: center;
     font-family: Kalam, sans-serif;
+    grid-column: 1/3;
   }
   h2 {
     text-align: center;
@@ -73,4 +80,19 @@ body {
   }
   footer a {
     color: bisque;
+  }
+  main {
+    background-color: bisque;
+    padding: 40px;
+    border: 5px solid black;
+    border-top: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 900px) {
+    main {
+      display: block;
+    }
   }
