@@ -1,0 +1,9 @@
+.logo {
+    width: 50px;
+}
+header {
+    display: flex;
+}
+footer {
+    display: flex;
+}
