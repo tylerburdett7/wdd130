@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <style>
+        /* CSS reset */
+        body, header, footer, nav, div, h1, h2, p, img, a {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <header>
-    <a id="logo_link" href="index.html">
-        <img class="logo" src="images/flyinghomelogo.png" alt="flying Home Logo">
+    <a>
+        <p>Tyler Burdett</p>
+        <p>Aerial Photography</p>
     </a>
     <nav>
         <a href="index.html">Home</a>
@@ -18,33 +27,39 @@
 </header>
 <body>
     <div id="hero">
-        <img class="Hero Image" src="images/hero.jpeg" alt="Me catching a drone" >
+        <img class="hero-img" src="images/hero.jpeg" alt="Me catching a drone" >
         <div id="hero-text">
             <h1>Tyler Burdett</h1>
         </div>
     </div>
 
     <div id="info-grid">
-        <div id="about-me"><h2>About Me</h2></div>
-        <img class="tyler-img" src="images/me.jpg" alt="Me" >
-        <div id="about-me-p">
-            <p>I am 19 years old from Layton Utah. I am currently attending BYU-Idaho majoring in web design and development. I have always loved photography and specifically drone photography. I am familiar with adobe photoshop and lightroom and am capable of taking quality pictures and editing them. You can check out my work <a href="my-work.html">here</a></p>
+        <div id="me-grid">
+            <div id="about-me"><h2>About Me</h2></div>
+            <img class="tyler-img" src="images/me.jpg" alt="Me" >
+            <div id="me-p">
+                <p>I am 19 years old from Layton Utah. I am currently attending BYU-Idaho majoring in web design and development. I have always loved photography and specifically drone photography. I am familiar with adobe photoshop and lightroom and am capable of taking quality pictures and editing them. You can check out my work <a href="my-work.html">here</a></p>
+            </div>
         </div>
-        <div id="high-quality"><h2>High Quality</h2></div>
-        <img class="drone-img" src="images/drone.jpg" alt="Me" >
-        <div id="high-quality-p">
-            <p>The drone I use is the DJI mini 3 pro. The mini 3 pro can shoot 4k video along with 48MP photo resolution. This drone is more than capable of taking high quality pictures and a variety of features that allow me to get the perfect shot.</p>
+        <div id="quality-grid">
+            <div id="high-quality"><h2>High Quality</h2></div>
+            <img class="drone-img" src="images/dronepic.jpeg" alt="Me" >
+            <div id="quality-p">
+                <p>The drone I use is the DJI mini 3 pro. The mini 3 pro can shoot 4k video along with 48MP photo resolution. This drone is more than capable of taking high quality pictures and a variety of features that allow me to get the perfect shot.</p>
+            </div>
         </div>
-        <div id="certified"><h2>Certified</h2></div>
-        <img class="faa-img" src="images/faa_logo.webp" alt="faa logo" >
-        <div id="certified-p">
-            <p>I have taken and passed the test to be certified under <a href="https://www.faa.gov/uas/commercial_operators" target="blank">Part 107</a> allowing me to take commercial shots with my drone.</p>
+        <div id="certified-grid">
+            <div id="certified"><h2>Certified</h2></div>
+            <img class="faa-img" src="images/faa_logo.webp" alt="faa logo" >
+            <div id="certified-p">
+                <p>As a certified <a href="https://www.faa.gov/uas/commercial_operators" target="blank">Part 107</a> operator accredited by the Federal Aviation Administration (FAA), I bring professional expertise to aerial photography. Ensuring compliance with FAA regulations, I am authorized to capture stunning aerial shots for commercial purposes.</p>
+            </div>
         </div>
     </div>
 
 </body>
     <footer>
-        <p>Flying Home &copy; 2024 - Tyler Burdett</p>
+        <p>Tyler Burdett 2024 &copy;</p>
         <p><a href="site-plan.html">Site Plan</a></p>
         <p><a href="contactus.html">Contact Me</a></p>
 </footer>
