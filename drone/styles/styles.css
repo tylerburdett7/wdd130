@@ -11,7 +11,12 @@ header {
     align-items: center;
     margin: 0 auto;
     height: 80px;
-    font-family: "Carter One"
+    font-family: "Carter One";
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 5px solid black;
+
 }
 header a {
     color: white;
@@ -23,23 +28,23 @@ header a {
 nav {
     display: flex;
     align-items: center;
-    flex-grow: 1;
-    display: inline;
+    flex-grow: 1;   
 }
 
 nav a {
-    color: white; /* Change the color of the navigation links */
+    color: white;
     text-decoration: none;
     margin: 9.5%;
     font-size: 120%;
 }
 
 nav a:hover {
-    color: gray /* Add underline on hover */
+    color: lightgray;
 }
 
 #hero {
     position: relative; /* Set position to relative to contain absolutely positioned text */
+    z-index: -1;
 }
 
 #hero-text {
@@ -64,6 +69,8 @@ nav a:hover {
     height: auto;
     display: block;
     margin: 0 auto;
+    margin-top: 75px;
+    border-bottom: 5px solid black;
 }
 
 /* Info grid */
@@ -80,13 +87,10 @@ nav a:hover {
     grid-row: 2;
     background-color: #333;
     padding: 50px;
-    transition: transform .7s;;
     border: 5px solid black;
     border-radius: 12px;
 }
-#me-grid:hover {
-    transform: scale(1.1);
-}
+
 #about-me {
     text-align: center;
     font-family: "Carter One";
@@ -112,13 +116,10 @@ nav a:hover {
     grid-row: 2;
     padding: 50px;
     background-color: #333;
-    transition: transform .7s;
     border: 5px solid black;
     border-radius: 12px;
 }
-#quality-grid:hover {
-    transform: scale(1.1);
-}
+
 #high-quality {
     text-align: center;
     font-family: "Carter One";
@@ -142,13 +143,10 @@ nav a:hover {
     grid-row: 2;
     padding: 50px;
     background-color: #333;
-    transition: transform .7s;
     border: 5px solid black;
     border-radius: 12px;
 }
-#certified-grid:hover {
-    transform: scale(1.1)
-}
+
 #certified {
     text-align: center;
     font-family: "Carter One";
@@ -210,7 +208,8 @@ footer {
     color: white; /* Change the text color */
     padding: 20px;
     text-align: center;
-    font-family: "Carter One"
+    font-family: "Carter One";
+    border-top: 5px solid black;
 }
 
 footer a {
