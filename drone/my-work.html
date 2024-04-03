@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/styles.css">
 <style>
     /* CSS reset */
     body, header, footer, nav, div, h1, h2, p, img, a {
@@ -14,47 +14,82 @@
     }
 </style>
 </head>
-<header>
-    <a>
-        <p>Tyler Burdett</p>
-        <p>Aerial Photography</p>
-    </a>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="real-estate.html">Real Estate</a>
-        <a href="my-work.html">My Work</a>
-    </nav>
-</header>
 <body>
-    <div id="photos">
-        <h1>Photos</h1>
+    <header>
+        <a>
+            <p>Tyler Burdett</p>
+            <p>Aerial Photography</p>
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="real-estate.html">Real Estate</a>
+            <a href="my-work.html">My Work</a>
+        </nav>
+    </header>
+    <div id="container">
+        <button class="tablink clicked" onclick="openPage('photos', this)" id="defaultOpen">Photos</button>
+        <button class="tablink" onclick="openPage('videos', this)">Videos</button>
     </div>
-    <div id="gallery">
-        <img src="images/bountiful_night.jpg" alt="">
-        <img src="images/flaming_gorge.jpg" alt="">
-        <img src="images/flaming_gorge_day.jpg" alt="">
-        <img src="images/layton_day.jpg" alt="">
-        <img src="images/layton_night.jpg" alt="">
-        <img src="images/main-street.jpg" alt="">
-        <img src="images/mesa_falls.jpg" alt="">
-        <img src="images/mountain.jpg" alt="">
-        <img src="images/snowy.jpg" alt="">
-        <img src="images/wakeboard.jpg" alt="">
-        <img src="images/wakeboard2.jpg" alt="">
-        <img src="images/mop.jpg" alt="">
+    <div id="photos" class="tabcontent">
+        <div id="row">
+            <div id="column">
+                <img src="images/mesa_falls.jpg" alt="Mesa Falls">
+                <img src="images/layton_day.jpg" alt="Layton Utah Temple">
+                <img src="images/wakeboard.jpg" alt="wakeboarding drone shot">
+                <img src="images/mountain.jpg" alt="Drone shot of mountain">
+            </div>
+            <div id="column">
+                <img src="images/flaming_gorge_day.jpg" alt="flaming gorge reservoir">
+                <img src="images/layton_night.jpg" alt="Layton Utah temple night">
+                <img src="images/wakeboard2.jpg" alt="wakeboarding drone shot">
+                <img src="images/mop.jpg" alt="drone night shot">
+            </div>
+            <div id="column">
+                <img src="images/flaming_gorge.jpg" alt="flaming gorge reservoir sunset">
+                <img src="images/bountiful_night.jpg" alt="Bountiful Utah temple night">
+                <img src="images/main-street.jpg" alt="drone sunset">
+                <img src="images/snowy.jpg" alt="drone shot on a winter day">
+            </div>
+        </div>
     </div>
-    <div id="videos-title">
-        <h1>Videos</h1>
+    <!--560 x 315 is original-->
+    <div id="videos" class="tabcontent" >
+        <div id="timelapse">
+            <iframe width="1000" height="563" src="https://www.youtube.com/embed/lPmZPLD4GkY?autoplay=1&controls=0&loop=1&mute=1&playlist=lPmZPLD4GkY" title="YouTube video player" allow="accelerometer; autoplay; loop; clipboard-write; encrypted-media; gyroscope; loop; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="boat-vid">
+            <iframe width="1000" height="563" src="https://www.youtube.com/embed/chHVo8m7j8Y?autoplay=1&controls=0&loop=1&mute=1&playlist=chHVo8m7j8Y" title="YouTube video player" allow="accelerometer; autoplay; loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div id="temple-vid">
+            <iframe width="1000" height="563" src="https://www.youtube.com/embed/N1F-oMNIvXg?autoplay=1&controls=0&loop=1&mute=1&playlist=N1F-oMNIvXg" title="YouTube video player" allow="accelerometer; autoplay; loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </div>
-    <div id="videos">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/lPmZPLD4GkY?autoplay=1&controls=0&loop=12&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; loop; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/chHVo8m7j8Y?si=lvyFPu0mw6WTdSKs&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/N1F-oMNIvXg?si=OnZZtu-IbZRuZxIg&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-</body>
+    <script>
+       function openPage(pageName, elmnt) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("clicked"); // Remove 'clicked' class from all buttons
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.classList.add("clicked"); // Add 'clicked' class to the clicked button
+        }
+        
+        </script>
     <footer>
-        <p>Flying Home &copy; 2024 - Tyler Burdett</p>
+        <p>Tyler Burdett 2024 &copy;</p>
         <p><a href="site-plan.html">Site Plan</a></p>
-        <p><a href="contactus.html">Contact Me</a></p>
-</footer>
+    </footer>
+    <script>
+        // Function to hide the videos section and display only photos section
+        window.onload = function() {
+            document.getElementById("photos").style.display = "block";
+            document.getElementById("videos").style.display = "none";
+        };
+    </script>
+</body>
 </html>
